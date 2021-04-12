@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QrCodeGenerator</title>
+</head>
+
+<body>
+    {% for item in obj %}
+    <div class="modelData">
+        {{item.name}}
+        {{item.phone_number}}
+        {{item.shift}}
+        <img src={{item.qr_code.url}}>
+    </div>
+    {% endfor %}
+</body>
+
+</html>

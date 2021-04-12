@@ -1,0 +1,40 @@
+/* Navbar login margin */
+.mx-5{
+  margin-left: 61rem !important;
+}
+
+/* Navbar  */
+.navbar-nav{
+    display: -webkit-inline-box !important;
+}
+a{
+    text-decoration: none;
+}
+@media (max-width:2560px) {
+  .login{
+    margin-left:1000px;
+  }
+}
+
+/* Wallpaper width and height */
+.img-fluid {
+    min-width: 100%;
+    height: max-content;
+}
+
+/* Moto  */
+.moto{
+    text-align: center;
+}
+
+/* Moto Color */
+.moto_color{
+    color:dimgrey;
+    font-weight: bold;
+}
+
+/* Card title alignment */
+.card-title{
+    text-align: center;
+}
+

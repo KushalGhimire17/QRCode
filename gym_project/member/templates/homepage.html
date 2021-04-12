@@ -1,0 +1,69 @@
+{% extends "member/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<img src="{% static 'assets/img/wallpaper.jpeg' %}" class="img-fluid" alt="Responsive image">
+<div class="about">
+    <div>
+        <div class="content-section">
+            <h3 style="text-align: center;">Message from CEO</h3>
+            <p style="text-align: center;" class='lead'>Yogeshwor Karmacharya</p>
+            <div class="message">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint esse sapiente hic natus vitae minima
+                    tempore
+                    impedit saepe accusamus commodi atque itaque ea similique consequatur, quos ab nobis? Consequuntur
+                    tenetur
+                    labore animi odio sequi, obcaecati qui asperiores eum nemo voluptatem sapiente expedita, sint saepe
+                    recusandae
+                    voluptates repellat magnam eveniet reprehenderit?</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="moto">
+            <h1 class="moto_color">Iron doesn't lie!</h1>
+            <h1 class="moto_color">No Pain, No Gain</h1>
+        </div>
+    </div>
+
+</div>
+<!-- Payment while joining gym -->
+<div class="card-group">
+    <div class="card">
+        <img src="{% static 'assets/img/photo1.png' %}" class="card-img-top" alt="Monthly Payment">
+        <div class="card-body">
+            <h5 class="card-title">Monthly <span>Rs. 1000/-</span class="rupee"></h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-success btn-lg btn-block" onclick="payment_gateway()">Get
+                Membership</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'assets/img/photo2.png' %}" class="card-img-top" alt="Three Months Payment">
+        <div class="card-body">
+            <h5 class="card-title">Three Months <span class="rupee">Rs. 2500/-</span></h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-success btn-lg btn-block">Get Membership</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'assets/img/photo3.png' %}" class="card-img-top" alt="Yearly Payment">
+        <div class="card-body">
+            <h5 class="card-title">Yearly <span class="rupee">Rs. 9000/-</span></h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-success btn-lg btn-block">Get Membership</button>
+        </div>
+    </div>
+</div>
+<!-- Payment End -->
+{% endblock content %}
